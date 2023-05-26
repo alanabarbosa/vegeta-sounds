@@ -6,9 +6,6 @@ for (let i = 1; i <= 12; i++) legend[i - 1].innerHTML = legend[i - 1].dataset.le
 
 const getSound = (event) => {
     const audio = new Audio(`./assets/sounds/${event.target.dataset.audio}.mp3`);
-    const currentItem = event.target;
-
-    console.log(currentItem)
      
     if (currentAudio !== null) {
       currentAudio.pause();
