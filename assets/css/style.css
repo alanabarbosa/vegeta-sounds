@@ -1,0 +1,107 @@
+*,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {    
+    background: #0B2A3F;
+}
+img {
+    max-width: 100%;
+}
+
+header {
+    background: #0B2A3F;
+    padding: 10px 20px;
+    border-bottom: 1px solid #FFF
+}
+
+main {
+    background: #0B2A3F;
+}
+
+h1 {
+    color: #FFF;
+    margin-top: 30px;
+    padding-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding: 20px;
+}
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.buttons-box {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 50px;
+    padding-bottom: 80px;
+    align-items: center;
+}
+
+.buttons {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.buttons img {
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+footer {
+    margin: 0 auto;
+    padding: 2px 20px;
+}
+
+footer p {
+    color: #FFF;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.box-sounds {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #FFF;
+}
+
+@media (max-width: 1010px) {
+    .buttons {
+        justify-content: center;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px;
+    }
+    
+    .buttons-box > img {
+        display: none;
+    }
+}
+
+@media (max-width: 680px) {
+    .buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 580px) {
+    .buttons {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
