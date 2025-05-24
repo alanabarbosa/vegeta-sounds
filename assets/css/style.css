@@ -54,11 +54,25 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 40px;
+    position: relative;
 }
 
-.buttons img {
+.buttons .box-sounds .circle-button {
+    background: #0080A4;
+    width: 188px;
+    height: 174px;
+    border-radius: 50%;
+}
+
+.button-background {
     cursor: pointer;
-    margin-bottom: 20px;
+    width: 200px;
+    height: 190px;
+    background: url('../images/background-transparent.png') no-repeat;
+    background-position: -5px -11px;
+    position: absolute;
+    top: 0;
+    border: 0;
 }
 
 footer {
@@ -76,9 +90,16 @@ footer p {
 .box-sounds {
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     color: #FFF;
+    position: relative;
+}
+
+
+span {
+    margin-top: 30px;
 }
 
 @media (max-width: 1010px) {
